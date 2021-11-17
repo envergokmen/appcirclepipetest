@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using System.Collections
+
+<div class="text-center">
+    <h1 class="display-4">Appcircle Gitlab Pipe Test App</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@foreach (DictionaryEntry de in Environment.GetEnvironmentVariables())
+{
+    <div>
+        @de.Key : @de.Value
+    </div>
+}
+
+
